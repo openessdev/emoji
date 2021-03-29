@@ -12,10 +12,22 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+        plugins: [
+          `gatsby-transformer-sharp`,
+          `gatsby-plugin-sharp`,
+        ]
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `emoji`,
+        path: `${__dirname}/src/data/`,
+        plugins: [
+          `gatsby-transformer-json`
+        ]
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
