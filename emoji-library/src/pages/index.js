@@ -4,24 +4,15 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import EmojiCard from "../components/emojiCard"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="container">
+    <div className="container emoji-list-wrapper">
       <div className="row text-center">
         <div className="col-xs-12">One of three columns</div>
-        <div className="col-sm">
-          <div
-            className=""
-            style={{
-              border: `1px solid blue`,
-              padding: `0 15px`,
-            }}
-          >
-            One of three columns
-          </div>
-        </div>
+        <EmojiCard />
         <div className="col-sm">One of three columns</div>
         <div className="col-sm">One of three columns</div>
         <div className="col-sm">One of three columns</div>

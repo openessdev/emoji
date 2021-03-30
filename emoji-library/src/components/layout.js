@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
@@ -38,14 +38,23 @@ const Layout = ({ children }) => {
       <footer
         style={{
           marginTop: `2rem`,
-          border: `1px solid blue`,
+          backgroundColor: `#00e5ff`,
+          padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 1100,
+            padding: `0 1.0875rem 1.45rem`,
+          }}
+        >
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.com">Gatsby</a>
+        </div>
       </footer>
-    </>
+    </div>
   )
 }
 

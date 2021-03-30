@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
   <header
+    className="header"
     style={{
       background: `#ffdd67`,
       marginBottom: `1.45rem`,
@@ -14,7 +15,7 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         // maxWidth: 960,
         textAlign: `center`,
-        padding: `1.45rem 1.0875rem`,
+        padding: `5rem 1.0875rem`,
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -28,10 +29,17 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+
       <p>An emoji guide for your commit messages</p>
-      <div>
-        <a href="/">Github</a>
-        <a href="/">Tweet</a>
+      <div className="social--links">
+        <div>
+          <span>D</span>
+          <a href="/">Github</a>
+        </div>
+        <div>
+          <span>D</span>
+          <a href="/">Tweet</a>
+        </div>
       </div>
     </div>
   </header>
