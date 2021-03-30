@@ -1,0 +1,25 @@
+{
+    "emoji": "😀",
+    "hexcode": "1F600",
+    "group": "smileys-emotion",
+    "subgroups": "face-smiling",
+    "annotation": "grinning face",
+    "tags": "face, grin",
+    "openmoji_tags": "smile, happy",
+    "openmoji_author": "Emily Jäger",
+    "openmoji_date": "2018-04-18",
+    "skintone": "",
+    "skintone_combination": "",
+    "skintone_base_emoji": "",
+    "skintone_base_hexcode": "",
+    "unicode": 1,
+    "order": 1,
+    "openmoji_images": {
+        "black": {
+            "svg": "C:\\Users\\Siji\\emoji\\emoji-library\\node_modules\\openmoji\\black\\svg\\1F600.svg"
+        },
+        "color": {
+            "svg": "C:\\Users\\Siji\\emoji\\emoji-library\\node_modules\\openmoji\\color\\svg\\1F600.svg"
+        }
+    }
+}

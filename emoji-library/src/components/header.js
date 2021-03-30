@@ -5,14 +5,15 @@ import { Link } from "gatsby"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#ffdd67`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        // maxWidth: 960,
+        textAlign: `center`,
         padding: `1.45rem 1.0875rem`,
       }}
     >
@@ -20,13 +21,18 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `black`,
             textDecoration: `none`,
           }}
         >
           {siteTitle}
         </Link>
       </h1>
+      <p>An emoji guide for your commit messages</p>
+      <div>
+        <a href="/">Github</a>
+        <a href="/">Tweet</a>
+      </div>
     </div>
   </header>
 )

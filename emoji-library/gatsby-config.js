@@ -7,27 +7,23 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-        plugins: [
-          `gatsby-transformer-sharp`,
-          `gatsby-plugin-sharp`,
-        ]
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `emoji`,
+        name: `emojiData`,
         path: `${__dirname}/src/data/`,
-        plugins: [
-          `gatsby-transformer-json`
-        ]
       }
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
