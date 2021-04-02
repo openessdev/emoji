@@ -1,25 +1,333 @@
-{
-    "emoji": "😀",
-    "hexcode": "1F600",
-    "group": "smileys-emotion",
-    "subgroups": "face-smiling",
-    "annotation": "grinning face",
-    "tags": "face, grin",
-    "openmoji_tags": "smile, happy",
-    "openmoji_author": "Emily Jäger",
-    "openmoji_date": "2018-04-18",
-    "skintone": "",
-    "skintone_combination": "",
-    "skintone_base_emoji": "",
-    "skintone_base_hexcode": "",
-    "unicode": 1,
-    "order": 1,
-    "openmoji_images": {
-        "black": {
-            "svg": "C:\\Users\\Siji\\emoji\\emoji-library\\node_modules\\openmoji\\black\\svg\\1F600.svg"
-        },
-        "color": {
-            "svg": "C:\\Users\\Siji\\emoji\\emoji-library\\node_modules\\openmoji\\color\\svg\\1F600.svg"
+[
+    {
+        "emoji": "",
+        "name": "binary code",
+        "code": ":binary:",
+        "tags": "binary",
+        "openess_author": "Sarah ,Kim",
+        "base_color": "",
+        "unicode": "",
+        "id": 1,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_binary-1.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "binary code",
+        "code": ":binary:",
+        "tags": "binary",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 2,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_binary-2.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "binary code",
+        "code": ":binary:",
+        "tags": "binary",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 3,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_binary-3.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "bug within code",
+        "code": ":purplebug:",
+        "tags": "bug",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 4,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_bug-1.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "bug within code",
+        "code": ":yellowbug:",
+        "tags": "bug",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 5,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_bug-2.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "bug slipped into code",
+        "code": ":bug:",
+        "tags": "bug",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 6,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_bug-3.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "bug slipped into code",
+        "code": ":bug:",
+        "tags": "bug",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 7,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_bug-4.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "bug within code",
+        "code": ":whitebug:",
+        "tags": "bug",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 8,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_bug-5.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "bug within code",
+        "code": ":orangebug:",
+        "tags": "bug",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 9,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_bug-6.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "busy writing scripts",
+        "code": ":busycoder:",
+        "tags": "busy",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 10,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_busycoder-1.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "busy writing scripts",
+        "code": ":busycoder:",
+        "tags": "busy",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 11,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_busycoder-2.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "busy writing scripts",
+        "code": ":busycoder:",
+        "tags": "busy",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 12,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_busycoder-3.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "busy writing scripts",
+        "code": ":busycoder:",
+        "tags": "busy",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 13,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_busycoder-4.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "busy writing scripts",
+        "code": ":busycoder:",
+        "tags": "busy",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 14,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_busycoder-5.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "busy writing scripts",
+        "code": ":busycoder:",
+        "tags": "busy",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 15,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_busycoder-6.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "database compromised",
+        "code": ":databasefire:",
+        "tags": "database",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 16,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_databasefire-1.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "database compromised",
+        "code": ":databasefire:",
+        "tags": "database",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 17,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_databasefire-2.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "database compromised",
+        "code": ":databasefire:",
+        "tags": "database",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 18,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_databasefire-3.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "offline",
+        "code": ":offline:",
+        "tags": "offline",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 19,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_offline-1.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "offline",
+        "code": ":offline:",
+        "tags": "offline",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 20,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_offline-2.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "online",
+        "code": ":online:",
+        "tags": "online",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 1,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_online-2.png"
+            }
+        }
+    },
+    {
+        "emoji": "",
+        "name": "online",
+        "code": ":online:",
+        "tags": "online",
+        "openess_author": "Sarah Kim",
+        "base_color":  "",
+        "unicode": "",
+        "id": 1,
+        "openess_images": {
+            "color": {
+                "png": "../images/png/emoji_online-2.png"
+            }
         }
     }
-}
+]
+
