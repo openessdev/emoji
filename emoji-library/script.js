@@ -1,14 +1,70 @@
-const fs = require('fs')
-const openmoji = require('openmoji')
-const om = openmoji.openmojis[0]
-const emojisPath = 'C:/Users/Siji/emoji/emoji-library/src/data/'
-const filename = 'emojiData'
+const fs = require("fs")
+const path = require("path")
 
-let data = JSON.stringify(om, null, 4)
+const relativePathToPngImage = path.relative(
+  __dirname,
+  "emoji\\emoji-library\\src\\images\\png"
+)
+const pngImagePath = path.join(__dirname, relativePathToPngImage)
 
-console.log('==', data)
+const emojiDir = pngImagePath
 
-fs.appendFile(`${emojisPath}/${filename}.json`, data, 'utf8', (err) => {
-    if (err) throw err;
-    console.log('Data written to file');
-});
+const emojiPngDir = "../images/png"
+const emojiSvgDir = "../images/svg"
+
+const getEmojiNameFromDir = async pathName => {
+  let namesArray = []
+  const files = await fs.promises.readdir(pathName)
+  for (const file of files) {
+    const holdEmojiName = path.basename(file, ".png")
+    const emojiName = holdEmojiName.slice(0, -2)
+    const emojiNameWithout = emojiName.substring(5).replace(/[^a-zA-Z ]/g, "")
+
+    namesArray.push({
+      name: emojiName,
+      code: `:${emojiNameWithout}:`,
+    })
+  }
+  return namesArray
+}
+
+const relativePathToJson = path.relative(
+  __dirname,
+  "emoji\\emoji-library\\src\\data\\emojiData.json"
+)
+const jsonDataPath = path.join(__dirname, relativePathToJson)
+
+let emojiNames = getEmojiNameFromDir(emojiDir)
+
+emojiNames
+  .then(emoji => {
+    let data = []
+    emoji.map(om => {
+      data.push(
+        Object.assign(
+          om,
+          {
+            url: "https://github.com/openessdev/emoji",
+            labels: " ",
+            color: "",
+            source: "Sarah Kim",
+            size: "201x201",
+            license: "optional, unless it's under a different license",
+          },
+          {
+            openess_images: {
+              png: emojiPngDir,
+              svg: emojiSvgDir,
+            },
+          }
+        )
+      )
+    })
+    return JSON.stringify(data)
+  })
+  .then(o => {
+    fs.writeFile(jsonDataPath, o, err => {
+      if (err) throw err
+      console.log("The file has been saved!")
+    })
+  })
