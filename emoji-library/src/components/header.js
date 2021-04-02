@@ -1,5 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import "../components/font-awesome"
 import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
@@ -30,16 +32,30 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
 
-      <p>An emoji guide for your commit messages</p>
+      <p
+        style={{
+          color: `#000`,
+        }}
+      >
+        A set of open-source custom themed emojis.
+      </p>
       <div className="social--links">
-        <div>
-          <span>D</span>
-          <a href="/">Github</a>
-        </div>
-        <div>
-          <span>D</span>
-          <a href="/">Tweet</a>
-        </div>
+        <a href="https://github.com/openessdev/emoji">
+          <button className="">
+            <span style={{ color: `yellow`, fontSize: `14px` }}>
+              <FontAwesomeIcon icon={"star"} />
+            </span>{" "}
+            Github
+          </button>
+        </a>
+        <a href="https://twitter.com/openessdev">
+          <button className="">
+            <span style={{ color: `blue`, fontSize: `14px` }}>
+              <FontAwesomeIcon icon={["fab", "twitter"]} />
+            </span>{" "}
+            Tweet
+          </button>
+        </a>
       </div>
     </div>
   </header>
