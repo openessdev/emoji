@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=BioRhyme:wght@400;700&family=Lora:wght@400;500;700&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;900&display=swap');
 body {
-    font-family: 'Playfair Display', serif;
-    /*background-color: #121212;*/
-    /*
-    font-family: 'BioRhyme', serif;
-    font-family: 'Alegreya', serif;
-    font-family: 'Lora', serif;
-        font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    */
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    word-break: break-word;
 }
 
 a {
     text-decoration: none;
 }
+
 .header div h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -21,8 +16,9 @@ a {
 }
 
 .header div p {
-    font-size: 34px;
+    font-size: 38px;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 header div .social--links {
     display: flex;
@@ -30,41 +26,75 @@ header div .social--links {
     margin-top: 40px;
 }
 
-header div .social--links div {
-    display: flex;
-    text-decoration: none;
-    cursor: pointer;
+header div .social--links a {
     margin: 10px;
-    padding: 10px;
-    color: white;
-    border-radius: 4px;
-    background: #ff5a79;
-    justify-content: center;
 }
 
-header div .social--links div a,
-header div .social--links div span {
-    color: white;
-    margin: 2px;
+header div .social--links a button {
+    padding: 12px 15px;
+    background: #ff5a79;
+    border-color: #ff5a79;
+    border-radius: 4px;
 }
+
+
 
 .emoji-list-wrapper {
-    margin-top: 200px;
+    margin-top: 100px;
+}
+
+.form-control.form-control__modified:focus {
+    box-shadow: 0 0 0 0.08rem rgb(255, 255, 255);
+}
+
+.horizontal__layout {
+    display: flex;
+}
+
+.horizontal__layout div:nth-of-type(1) {
+    /*width: 40%;*/
+}
+
+.horizontal__layout div:nth-of-type(2) {
+    width: 60%;
 }
 
 .card-wrapper {
     background-color: #2b2b2b;
     border-radius: 4px;
+    color: white;
 }
 
+.card-wrapper:hover {
+    background-color: RGBA(43, 43, 43, 0.9);
+}
+
+
 .card-wrapper .emoji--image {
-    padding: 60px 0;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border: none;
-    background-color: #ff7281;
+    padding: 40px;
+    border-radius: 4px;
+}
+
+.card-wrapper .emoji--image.emoji--image__modified {
+    padding:  30px 0 30px 0;
 }
 
 .card-wrapper .code--text {
-    padding: 60px 0;
+    padding: 20px 0 60px 0;
+}
+.card-wrapper .code--text.code--text__modified {
+    padding: 30px 0 30px 0;
+}
+
+.card-wrapper .code--text span button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.code--text .description {
+    font-size: 14px;
 }
