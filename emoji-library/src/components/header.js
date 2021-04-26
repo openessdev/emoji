@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "../components/font-awesome"
 import { Link } from "gatsby"
+import Logo from "../images/background/openess-logo.svg"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -21,9 +22,18 @@ const Header = ({ siteTitle }) => (
         style={{
           color: `#ffffff`,
           textDecoration: `none`,
+          fontSize: `90px`,
         }}
       >
-        {siteTitle}
+        {/*{siteTitle}*/}
+        <img
+          src={Logo}
+          alt=""
+          style={{
+            width: `230px`,
+            height: `230px`,
+          }}
+        />
       </Link>
     </h1>
   </header>

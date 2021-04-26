@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="layout">
+    <div className="layout pt-5">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{

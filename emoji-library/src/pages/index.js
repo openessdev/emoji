@@ -3,8 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "../components/font-awesome"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql, useStaticQuery } from "gatsby"
+import ReactTooltip from "react-tooltip"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import EmojiCard from "../components/emojiCard"
+import Logo from "../images/background/openess-logo.svg"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -50,41 +52,46 @@ const IndexPage = () => {
             <div className=" row" style={{ position: `sticky`, top: `0` }}>
               <div className="col-xl-12 col">
                 <div
-                  className=" platform--image"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
-                  title="Tooltip on right"
+                  className=" platform--image p-md-2"
+                  data-tip="Download all"
                 >
+                  <ReactTooltip />
                   <FontAwesomeIcon icon={"download"} />
                 </div>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image">
+                <div className=" platform--image p-md-2" data-tip="Github">
+                  <ReactTooltip />
                   <FontAwesomeIcon icon={["fab", "github"]} />
                 </div>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image">
+                <div className=" platform--image p-md-2" data-tip="Discord">
+                  <ReactTooltip />
                   <FontAwesomeIcon icon={["fab", "discord"]} />
                 </div>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image">
+                <div className=" platform--image p-md-2" data-tip="Slack">
+                  <ReactTooltip />
                   <FontAwesomeIcon icon={["fab", "slack"]} />
                 </div>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image">
+                <div className=" platform--image p-md-2" data-tip="Mail">
+                  <ReactTooltip />
                   <FontAwesomeIcon icon={"envelope"} />
                 </div>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image">
+                <div className=" platform--image p-md-2" data-tip="Whatsapp">
+                  <ReactTooltip />
                   <FontAwesomeIcon icon={["fab", "whatsapp"]} />
                 </div>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image">
+                <div className=" platform--image p-md-2" data-tip="Telegram">
+                  <ReactTooltip />
                   <FontAwesomeIcon icon={"paper-plane"} />
                 </div>
               </div>
@@ -135,7 +142,14 @@ const IndexPage = () => {
                 </p>
               </div>
               <div className="d-flex bottom-logo justify-content-end">
-                <h1>Openess</h1>
+                <img
+                  src={Logo}
+                  alt=""
+                  style={{
+                    width: `230px`,
+                    height: `230px`,
+                  }}
+                />
               </div>
             </div>
           </div>
