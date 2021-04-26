@@ -1,20 +1,12 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "../components/font-awesome"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, useStaticQuery } from "gatsby"
 import EmojiCard from "../components/emojiCard"
+
 const IndexPage = () => {
-  const [column, setColumn] = React.useState(false)
-
-  const handleLayoutChange = () => {
-    setColumn(!column)
-    // setSize(!size)
-  }
-
   const data = useStaticQuery(graphql`
     query {
       allEmojiDataJson {
@@ -22,6 +14,7 @@ const IndexPage = () => {
           emoji
           id
           name
+          description
           code
           openess_images {
             color {
@@ -40,41 +33,118 @@ const IndexPage = () => {
       }
     }
   `)
+
   return (
     <Layout>
       <SEO title="Home" />
+      {/*<div className="container emoji-collage">IMAGE COLLAGE</div>*/}
 
-      <div className="container emoji-list-wrapper">
-        <div className="row text-center g-4">
-          <div
-            className="col-xs-2"
-            style={{ color: `#ff5a79`, fontSize: `24px`, cursor: `pointer` }}
-          >
-            {column === true ? (
-              <FontAwesomeIcon onClick={handleLayoutChange} icon={"th"} />
-            ) : (
-              <FontAwesomeIcon onClick={handleLayoutChange} icon={"th-list"} />
-            )}
+      <div className="container mt-4">
+        <div className="row g-4">
+          <div className="col">
+            <div
+              className=" row text-center"
+              style={{ position: `sticky`, top: `0` }}
+            >
+              <div className="col-xl-12 col">
+                <div
+                  className=" platform--image"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  title="Tooltip on right"
+                >
+                  <FontAwesomeIcon icon={"download"} />
+                </div>
+              </div>
+              <div className="col-xl-12 col">
+                <div className=" platform--image">
+                  <FontAwesomeIcon icon={["fab", "github"]} />
+                </div>
+              </div>
+              <div className="col-xl-12 col">
+                <div className=" platform--image">
+                  <FontAwesomeIcon icon={["fab", "discord"]} />
+                </div>
+              </div>
+              <div className="col-xl-12 col">
+                <div className=" platform--image">
+                  <FontAwesomeIcon icon={["fab", "slack"]} />
+                </div>
+              </div>
+              <div className="col-xl-12 col">
+                <div className=" platform--image">
+                  <FontAwesomeIcon icon={"envelope"} />
+                </div>
+              </div>
+              <div className="col-xl-12 col">
+                <div className=" platform--image">
+                  <FontAwesomeIcon icon={["fab", "whatsapp"]} />
+                </div>
+              </div>
+              <div className="col-xl-12 col">
+                <div className=" platform--image">
+                  <FontAwesomeIcon icon={"paper-plane"} />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="col-xs-10 d-flex align-items-center">
-            <input
-              className="form-control form-control-lg form-control__modified mr-2"
-              type="text"
-              placeholder="Search your emoji.."
-              aria-label=".form-control-lg example"
-              style={{
-                backgroundColor: `#2b2b2b`,
-                color: `white`,
-                border: `white`,
-                height: `55px`,
-              }}
-            />
+          <div className="col-sm-11">
+            <div className=" row g-4">
+              <div className="col-xl-12 ">
+                <div className="">
+                  <div className="page-detail-wrapper">
+                    <h1 className="page-detail--title">
+                      Open-source Emoji Pack for Devs
+                    </h1>
+                    <p className="page--detail--header">
+                      Creating open-source software can be a thankless job. This
+                      capsule collection of 22 handcrafted emojis (inspired by
+                      NFT art colorways & aesthetics) is our small way of saying
+                      “thank you!” & recognizing the tireless work of OSS
+                      contributors, builders & makers.
+                    </p>
+                    <p className="link--intro">
+                      The emojis are designed to fill gaps in a typical
+                      developer’s day - from “busy coders” to “bugs” &
+                      “databases on fire”.
+                    </p>
+
+                    <p>
+                      These emoji packs are 100% free & open-source. Download
+                      these emoji packs by clicking on the icons to the left or
+                      below. Available on WhatsApp, iMessage & Telegram by
+                      searching "Openess" in the Top Stickers app. Please note,
+                      these emojis may not be used in commercial work, they are
+                      for personal use only.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {data.allEmojiDataJson.nodes.map(item => (
+                <EmojiCard key={item.id} item={item} />
+              ))}
+              <div className="my-4 credits">
+                <p>Illustrations & graphic design: Sarah Kim</p>
+                <p>Website development & data structures: Muhammad Bashir</p>
+                <p>Creative direction & production: Julia Che</p>
+                <p>
+                  A big thank you to David Di Biase & all our friends who
+                  provided feedback & support in the making of this project!
+                </p>
+              </div>
+            </div>
           </div>
-          {data.allEmojiDataJson.nodes.map(item => (
-            <EmojiCard key={item.id} item={item} column={column} />
-          ))}
         </div>
       </div>
+      {/*<div className="my-4 credits">
+        <p>Illustrations & graphic design: Sarah Kim</p>
+        <p>Website development & data structures: Muhammad Bashir</p>
+        <p>Creative direction & production: Julia Che</p>
+        <p>
+          A big thank you to David Di Biase & all our friends who provided
+          feedback & support in the making of this project!
+        </p>
+      </div>*/}
     </Layout>
   )
 }

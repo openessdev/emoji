@@ -1,100 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=BioRhyme:wght@400;700&family=Lora:wght@400;500;700&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Manrope', sans-serif;
     background-color: #121212;
+    min-height: 100vh;
     word-break: break-word;
+    box-sizing: border-box;
+    background-image: url('../../images/background/Wave.png'),
+    linear-gradient(
+            180deg,
+            rgba(2, 2, 4, 0.1) 0%,
+            rgba(16, 5, 15, 0.55) 50%,
+            rgba(42, 16, 39, 0.9) 100%
+    ),
+    url('../../images/background/StarsBackground.jpg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom, center, center;
+    background-size: contain, cover, cover;
+    color: #d7cede;
 }
+
 
 a {
     text-decoration: none;
+    color: #ffffff;
 }
 
-.header div h1 {
-    font-family: 'Roboto', sans-serif;
+.layout {
+    background-image: url(../../images/background/Logo.png) ;
+    background-position: 190% 5%;
+    background-repeat: no-repeat;
+    background-size: auto 120vh;
+}
+
+
+.page-detail-wrapper p,
+.credits {
+    text-align: start ;
+    word-wrap: anywhere;
+    line-height: 1.5;
+    font-size: 28px;
+}
+
+.page-detail-wrapper .page-detail--title {
     font-weight: bold;
-    font-size: 80px;
 }
-
-.header div p {
-    font-size: 38px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-}
-header div .social--links {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-header div .social--links a {
-    margin: 10px;
-}
-
-header div .social--links a button {
-    padding: 12px 15px;
-    background: #ff5a79;
-    border-color: #ff5a79;
-    border-radius: 4px;
-}
-
-
 
 .emoji-list-wrapper {
     margin-top: 100px;
 }
 
-.form-control.form-control__modified:focus {
-    box-shadow: 0 0 0 0.08rem rgb(255, 255, 255);
+.contributors .contributor {
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    font-size: 23px;
+
 }
 
-.horizontal__layout {
+/* Emoji Card*/
+.emoji-tile-wrapper .emoji-tile {
+    height: 300px;
     display: flex;
+    flex-direction: column;
 }
 
-.horizontal__layout div:nth-of-type(1) {
-    /*width: 40%;*/
+.emoji-tile-wrapper .emoji-tile .emoji--frame {
+    flex: 2;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
 }
 
-.horizontal__layout div:nth-of-type(2) {
-    width: 60%;
+.emoji-tile-wrapper .emoji-tile .emoji--description--wrapper {
+    flex: 1;
+    justify-content: center;
+    align-items: start;
+    background: #000000;
 }
 
-.card-wrapper {
-    background-color: #2b2b2b;
-    border-radius: 4px;
-    color: white;
+.emoji-tile-wrapper .emoji-tile .emoji--description--wrapper h6:nth-of-type(1) {
+   font-size: 20px;
 }
 
-.card-wrapper:hover {
-    background-color: RGBA(43, 43, 43, 0.9);
+.emoji-tile-wrapper .emoji-tile .emoji--description--wrapper h6:nth-of-type(2) {
+   font-size: 16px;
 }
 
-
-.card-wrapper .emoji--image {
-    padding: 40px;
-    border-radius: 4px;
+.emoji-tile-wrapper .emoji-tile .emoji--frame .tile {
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+    display: flex;
+    background: #fff;
+    box-shadow:
+            12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+            -8px -8px 12px 0 rgba(255, 255, 235, 0.3);
+    align-items: center;
+    justify-content: center;
 }
 
-.card-wrapper .emoji--image.emoji--image__modified {
-    padding:  30px 0 30px 0;
+.page-detail-wrapper .emoji--pack--links .link--holder a p {
+    font-size: 22px;
 }
 
-.card-wrapper .code--text {
-    padding: 20px 0 60px 0;
-}
-.card-wrapper .code--text.code--text__modified {
-    padding: 30px 0 30px 0;
+.link--intro {
+    font-size: 24px;
 }
 
-.card-wrapper .code--text span button {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
+.emoji--pack--links {
+    text-decoration: none;
+    list-style-type: none;
 }
 
-.code--text .description {
-    font-size: 14px;
+.emoji--pack--links .link--holder {
+    margin-right: 10px;
+}
+
+.platform--image {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+@media (max-width: 360px) {
+    .platform--image {
+        font-size: 14px;
+    }
+}
+
+.platform--image:hover {
+    color: #D7CEDE;
+    /*color: red;*/
 }

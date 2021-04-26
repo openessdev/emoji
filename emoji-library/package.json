@@ -27,11 +27,13 @@
     "react": "^17.0.1",
     "react-clipboard.js": "^2.0.16",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-tooltip": "^4.2.18"
   },
   "devDependencies": {
     "eslint-config-react-app": "^6.0.0",
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "svgo": "^2.3.0"
   },
   "keywords": [
     "gatsby"

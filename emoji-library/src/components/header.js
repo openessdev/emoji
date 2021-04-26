@@ -6,58 +6,26 @@ import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
   <header
-    className="header"
+    className="header container"
     style={{
-      background: `#ffdd67`,
-      marginBottom: `1.45rem`,
+      margin: `0 auto`,
+      maxWidth: 1100,
+      height: `70px`,
+      display: `flex`,
+      alignItems: `center`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        // maxWidth: 960,
-        textAlign: `center`,
-        padding: `5rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `black`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-
-      <p
+    <h1 style={{ margin: 0, fontSize: `30px` }}>
+      <Link
+        to="/"
         style={{
-          color: `#000`,
+          color: `#ffffff`,
+          textDecoration: `none`,
         }}
       >
-        A set of open-source custom themed emojis.
-      </p>
-      <div className="social--links">
-        <a href="https://github.com/openessdev/emoji">
-          <button className="">
-            <span style={{ color: `yellow`, fontSize: `14px` }}>
-              <FontAwesomeIcon icon={"star"} />
-            </span>{" "}
-            Github
-          </button>
-        </a>
-        <a href="https://twitter.com/openessdev">
-          <button className="">
-            <span style={{ color: `blue`, fontSize: `14px` }}>
-              <FontAwesomeIcon icon={["fab", "twitter"]} />
-            </span>{" "}
-            Tweet
-          </button>
-        </a>
-      </div>
-    </div>
+        {siteTitle}
+      </Link>
+    </h1>
   </header>
 )
 

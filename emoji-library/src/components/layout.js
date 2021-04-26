@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="">
+    <div className="layout">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
@@ -38,7 +38,6 @@ const Layout = ({ children }) => {
       <footer
         style={{
           marginTop: `2rem`,
-          backgroundColor: `#00e5ff`,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
@@ -49,9 +48,9 @@ const Layout = ({ children }) => {
             padding: `0 1.0875rem 1.45rem`,
           }}
         >
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, Created by
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="https://www.gatsbyjs.com">Openess</a>
         </div>
       </footer>
     </div>
