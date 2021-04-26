@@ -32,7 +32,10 @@ a {
     background-size: auto 120vh;
 }
 
-
+.emoji-collage {
+    height: 500px;
+    background-image: url('../../images/background/BgCover.png');
+}
 .page-detail-wrapper p,
 .credits {
     text-align: start ;

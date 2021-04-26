@@ -37,15 +37,19 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      {/*<div className="container emoji-collage">IMAGE COLLAGE</div>*/}
+      <div
+        className="container emoji-collage"
+        style={{
+          // margin: `0 auto`,
+          maxWidth: 1100,
+          // padding: `0 1.0875rem 1.45rem`,
+        }}
+      />
 
       <div className="container mt-4">
         <div className="row g-4">
           <div className="col">
-            <div
-              className=" row text-center"
-              style={{ position: `sticky`, top: `0` }}
-            >
+            <div className=" row" style={{ position: `sticky`, top: `0` }}>
               <div className="col-xl-12 col">
                 <div
                   className=" platform--image"
@@ -136,15 +140,6 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      {/*<div className="my-4 credits">
-        <p>Illustrations & graphic design: Sarah Kim</p>
-        <p>Website development & data structures: Muhammad Bashir</p>
-        <p>Creative direction & production: Julia Che</p>
-        <p>
-          A big thank you to David Di Biase & all our friends who provided
-          feedback & support in the making of this project!
-        </p>
-      </div>*/}
     </Layout>
   )
 }
