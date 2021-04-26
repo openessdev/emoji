@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
 body {
     font-family: 'Manrope', sans-serif;
     background-color: #121212;
@@ -19,7 +20,6 @@ body {
     color: #d7cede;
 }
 
-
 a {
     text-decoration: none;
     color: #ffffff;
@@ -36,6 +36,7 @@ a {
     height: 500px;
     background-image: url('../../images/background/BgCover.png');
 }
+
 .page-detail-wrapper p,
 .credits {
     text-align: start ;
@@ -132,5 +133,8 @@ a {
 
 .platform--image:hover {
     color: #D7CEDE;
-    /*color: red;*/
+}
+
+.bottom-logo h1 {
+    color: #ffffff;
 }

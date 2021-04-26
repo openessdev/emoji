@@ -40,9 +40,7 @@ const IndexPage = () => {
       <div
         className="container emoji-collage"
         style={{
-          // margin: `0 auto`,
           maxWidth: 1100,
-          // padding: `0 1.0875rem 1.45rem`,
         }}
       />
 
@@ -135,6 +133,9 @@ const IndexPage = () => {
                   A big thank you to David Di Biase & all our friends who
                   provided feedback & support in the making of this project!
                 </p>
+              </div>
+              <div className="d-flex bottom-logo justify-content-end">
+                <h1>Openess</h1>
               </div>
             </div>
           </div>

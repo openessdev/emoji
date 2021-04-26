@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
       alignItems: `center`,
     }}
   >
-    <h1 style={{ margin: 0, fontSize: `30px` }}>
+    <h1 style={{ margin: 0, color: `#ffffff` }}>
       <Link
         to="/"
         style={{
