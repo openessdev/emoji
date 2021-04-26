@@ -123,6 +123,7 @@ a {
 .platform--image {
     font-size: 28px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 @media (max-width: 360px) {

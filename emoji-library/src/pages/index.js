@@ -52,7 +52,7 @@ const IndexPage = () => {
             <div className=" row" style={{ position: `sticky`, top: `0` }}>
               <div className="col-xl-12 col">
                 <div
-                  className=" platform--image p-md-2"
+                  className=" platform--image m-md-2"
                   data-tip="Download all"
                 >
                   <ReactTooltip />
@@ -60,37 +60,37 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image p-md-2" data-tip="Github">
+                <div className=" platform--image m-md-2" data-tip="Github">
                   <ReactTooltip />
                   <FontAwesomeIcon icon={["fab", "github"]} />
                 </div>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image p-md-2" data-tip="Discord">
+                <div className=" platform--image m-md-2" data-tip="Discord">
                   <ReactTooltip />
                   <FontAwesomeIcon icon={["fab", "discord"]} />
                 </div>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image p-md-2" data-tip="Slack">
+                <div className=" platform--image m-md-2" data-tip="Slack">
                   <ReactTooltip />
                   <FontAwesomeIcon icon={["fab", "slack"]} />
                 </div>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image p-md-2" data-tip="Mail">
+                <div className=" platform--image m-md-2" data-tip="Mail">
                   <ReactTooltip />
                   <FontAwesomeIcon icon={"envelope"} />
                 </div>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image p-md-2" data-tip="Whatsapp">
+                <div className=" platform--image m-md-2" data-tip="Whatsapp">
                   <ReactTooltip />
                   <FontAwesomeIcon icon={["fab", "whatsapp"]} />
                 </div>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image p-md-2" data-tip="Telegram">
+                <div className=" platform--image m-md-2" data-tip="Telegram">
                   <ReactTooltip />
                   <FontAwesomeIcon icon={"paper-plane"} />
                 </div>
