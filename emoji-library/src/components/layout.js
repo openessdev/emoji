@@ -35,24 +35,6 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
-      <footer
-        style={{
-          marginTop: `2rem`,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 1100,
-            padding: `0 1.0875rem 1.45rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Created by
-          {` `}
-          <a href="https://www.gatsbyjs.com">Openess</a>
-        </div>
-      </footer>
     </div>
   )
 }

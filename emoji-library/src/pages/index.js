@@ -7,6 +7,8 @@ import ReactTooltip from "react-tooltip"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import EmojiCard from "../components/emojiCard"
 import Logo from "../images/background/openess-logo.svg"
+import Cover from "../images/background/BgCover.png"
+import Helmet from "react-helmet"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -36,20 +38,37 @@ const IndexPage = () => {
     }
   `)
 
+  const domain = "https://openess-test.netlify.app"
   return (
     <Layout>
+      <Helmet>
+        <meta property="og:image" content={domain + "/og-image/index.png"} />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:width" content="50" />
+      </Helmet>
+
       <SEO title="Home" />
+
       <div
         className="container emoji-collage"
         style={{
           maxWidth: 1100,
+          marginTop: `50px`,
         }}
-      />
-
+      >
+        <img
+          src={Cover}
+          alt=""
+          style={{
+            width: `100%`,
+            height: `auto`,
+          }}
+        />
+      </div>
       <div className="container mt-4">
         <div className="row g-4">
           <div className="col">
-            <div className=" row" style={{ position: `sticky`, top: `0` }}>
+            <div className=" row" style={{ position: `sticky`, top: `50px` }}>
               <div className="col-xl-12 col">
                 <div
                   className=" platform--image m-md-2"
@@ -83,7 +102,7 @@ const IndexPage = () => {
                   <FontAwesomeIcon icon={"envelope"} />
                 </div>
               </div>
-              <div className="col-xl-12 col">
+              {/* <div className="col-xl-12 col">
                 <div className=" platform--image m-md-2" data-tip="Whatsapp">
                   <ReactTooltip />
                   <FontAwesomeIcon icon={["fab", "whatsapp"]} />
@@ -94,7 +113,7 @@ const IndexPage = () => {
                   <ReactTooltip />
                   <FontAwesomeIcon icon={"paper-plane"} />
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
           <div className="col-sm-11">
@@ -121,10 +140,11 @@ const IndexPage = () => {
                     <p>
                       These emoji packs are 100% free & open-source. Download
                       these emoji packs by clicking on the icons to the left or
-                      below. Available on WhatsApp, iMessage & Telegram by
-                      searching "Openess" in the Top Stickers app. Please note,
-                      these emojis may not be used in commercial work, they are
-                      for personal use only.
+                      below. {""}
+                      <span style={{ color: `purple` }}>
+                        Available on WhatsApp, iMessage & Telegram by searching
+                        "Openess" in the Top Stickers app.
+                      </span>
                     </p>
                   </div>
                 </div>

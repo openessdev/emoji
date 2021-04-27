@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Openess Emojis",
+    "source": "https://emoji.openess.dev/",
+    "copyright": "optional",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "name": "binary_code_navy",
+    "url": "https://user-images.githubusercontent.com/49247838/116033865-22708900-a65a-11eb-82f1-6e922fa36885.png",
+    " labels": "openess binary data navy"
+  },
+  {
+    "name": "binary_code_blue",
+    "url": "https://user-images.githubusercontent.com/49247838/116033941-40d68480-a65a-11eb-9125-a8c68fe4aa90.png",
+    " labels": "openess binary data blue"
+  },
+  {
+    "name": "binary_code_green",
+    "url": "https://user-images.githubusercontent.com/49247838/116033980-58ae0880-a65a-11eb-9ae8-c2bed5bd7826.png",
+    " labels": "openess binary data green"
+
+  },
+  {
+    "name": "bug_purple",
+    "url": "https://user-images.githubusercontent.com/49247838/116034050-7d09e500-a65a-11eb-8af0-8911f4aedc95.png",
+    " labels": "openess bug purple"
+  },
+  {
+    "name": "bug_yellow",
+    "url": "https://user-images.githubusercontent.com/49247838/116034078-9448d280-a65a-11eb-923c-e4d4f648896a.png",
+    " labels": "openess bug yellow"
+  },
+  {
+    "name": "bug_green",
+    "url": "https://user-images.githubusercontent.com/49247838/116034113-a460b200-a65a-11eb-801c-6fdb8ac7bed5.png",
+    " labels": "openess bug green"
+  },
+  {
+    "name": "bug_pink",
+    "url": "https://user-images.githubusercontent.com/49247838/116034159-c0fcea00-a65a-11eb-938d-f2e9d101d547.png",
+    " labels": "openess bug pink"
+  },
+  {
+    "name": "bug_blue",
+    "url": "https://user-images.githubusercontent.com/49247838/116034206-d114c980-a65a-11eb-98dc-90888cdbe492.png",
+    " labels": "openess bug blue"
+  },
+  {
+    "name": "bug_rainbow",
+    "url": "https://user-images.githubusercontent.com/49247838/116034255-e7228a00-a65a-11eb-8c43-4dbf6935f14d.png",
+    " labels": "openess bug rainbow"
+  },
+  {
+    "name": "busycoder_yellow",
+    "url": "https://user-images.githubusercontent.com/49247838/116034331-01f4fe80-a65b-11eb-872b-07f04958f496.png",
+    " labels": "openess busy coder yellow"
+  },
+  {
+    "name": "busycoder_pink",
+    "url": "https://user-images.githubusercontent.com/49247838/116034364-10431a80-a65b-11eb-8d1f-5021e04992a1.png",
+    "labels": "openess busy coder pink"
+  },
+  {
+    "name": "busycoder_blue",
+    "url": "https://user-images.githubusercontent.com/49247838/116034644-86478180-a65b-11eb-9046-0ce8a21384d8.png",
+    "labels": "openess busy coder blue"
+  },
+  {
+    "name": "busycoder_orange",
+    "url": "https://user-images.githubusercontent.com/49247838/116034677-96f7f780-a65b-11eb-89f6-095de9ba74b5.png",
+    " labels": "openess busy coder orange"
+  },
+  {
+    "name": "busycoder_purple",
+    "url": "https://user-images.githubusercontent.com/49247838/116034717-ad05b800-a65b-11eb-8324-fa638186d54a.png",
+    "labels": "openess busy coder purple"
+  },
+  {
+    "name": "busycoder_green",
+    "url": "https://user-images.githubusercontent.com/49247838/116034752-be4ec480-a65b-11eb-9c72-638939be516a.png",
+    " labels": "openess busy coder green"
+  },
+  {
+    "name": "database_orange",
+    "url": "https://user-images.githubusercontent.com/49247838/116034850-e4746480-a65b-11eb-8bbe-660d1db1db7d.png",
+    " labels": "openess database on fire orange"
+  },
+  {
+    "name": "database_green",
+    "url": "https://user-images.githubusercontent.com/49247838/116034808-d1619480-a65b-11eb-9b50-27da25fb30d5.png",
+    " labels": "openess database on fire green"
+  },
+  {
+    "name": "database_pink",
+    "url": "https://user-images.githubusercontent.com/49247838/116034908-f7873480-a65b-11eb-8ce9-0835e628a338.png",
+    "labels": "openess database on fire pink"
+  },
+  {
+    "name": "offline_pink",
+    "url": "https://user-images.githubusercontent.com/49247838/116034965-1259a900-a65c-11eb-9efd-31db2a242e8b.png",
+    " labels": "collection name offlinepink"
+  },
+  {
+    "name": "offline_purple",
+    "url": "https://user-images.githubusercontent.com/49247838/116034994-22718880-a65c-11eb-8ee0-db613f388e73.png",
+    "labels": "offlinepurple collection name "
+  },
+  {
+    "name": "online_green",
+    "url": "https://user-images.githubusercontent.com/49247838/116035022-2e5d4a80-a65c-11eb-88d1-a206b3f9b706.png",
+    "labels": "collection name onlinegreen"
+  },
+  {
+    "name": "online_purple",
+    "url": "https://user-images.githubusercontent.com/49247838/116035054-3e752a00-a65c-11eb-9860-aea3cdcd8656.png",
+    "labels": "onlinepurple collection name"
+  }
+]

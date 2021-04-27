@@ -16,26 +16,24 @@ const Header = ({ siteTitle }) => (
       alignItems: `center`,
     }}
   >
-    <h1 style={{ margin: 0, color: `#ffffff` }}>
-      <Link
-        to="/"
+    <Link
+      to="/"
+      style={{
+        color: `#ffffff`,
+        textDecoration: `none`,
+        // fontSize: `90px`,
+      }}
+    >
+      {/*{siteTitle}*/}
+      <img
+        src={Logo}
+        alt=""
         style={{
-          color: `#ffffff`,
-          textDecoration: `none`,
-          fontSize: `90px`,
+          width: `230px`,
+          height: `230px`,
         }}
-      >
-        {/*{siteTitle}*/}
-        <img
-          src={Logo}
-          alt=""
-          style={{
-            width: `230px`,
-            height: `230px`,
-          }}
-        />
-      </Link>
-    </h1>
+      />
+    </Link>
   </header>
 )
 

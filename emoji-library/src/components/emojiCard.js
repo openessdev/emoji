@@ -1,10 +1,12 @@
 import React, { useRef } from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Clipboard from "react-clipboard.js"
+import ReactTooltip from "react-tooltip"
+
 import generateLightColorHex from "../helpers/util"
 
 const EmojiCard = ({ item }) => {
-  const color = useRef(generateLightColorHex())
+  // const color = useRef(generateLightColorHex())
 
   const image = getImage(item.openess_images.color.png)
   return (
@@ -17,14 +19,17 @@ const EmojiCard = ({ item }) => {
               backgroundColor: `${generateLightColorHex()}`,
             }}
           >
-            <div className=" tile">
+            <div className=" tile" data-tip="Download emoji">
+              <ReactTooltip />
               <a href={image.images.fallback.src} download>
                 <GatsbyImage image={image} alt={item.code} />
               </a>
             </div>
           </div>
           <div className="emoji--description--wrapper px-2">
-            <h6 className=" text-center emoji-code pt-2">{item.code}</h6>
+            <Clipboard data-clipboard-text={item.code}>
+              <h6 className=" text-center emoji-code pt-2">{item.code}</h6>
+            </Clipboard>
             <h6 className=" text-center emoji--description">
               {item.description}
             </h6>
