@@ -71,9 +71,9 @@ const IndexPage = () => {
         <meta name="twitter:creator" content="@openessdev" />
         <meta property="og:url" content={domain} />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Openess" />
+        <meta property="og:title" content="Open-source emoji!" />
         <meta property="og:image" content={domain + "/og-image/share.jpeg"} />
-        <meta property="og:image:alt" content="Openess" />
+        <meta property="og:image:alt" content="Openess Emoji" />
         <meta property="og:image:width" content="1256" />
         <meta property="og:image:width" content="2400" />
         <meta
@@ -85,7 +85,7 @@ const IndexPage = () => {
           content="Check out this open-source emoji pack by @openess! ✨"
         />
       </Helmet>
-      <SEO title="Home" />
+      <SEO title="Open-source emoji!" />
       <div
         className="container emoji-collage mb-4"
         style={{

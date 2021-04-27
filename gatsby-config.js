@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Openess Emopjis`,
+    title: `Openess`,
     description: `Openess emojis for everyone!.`,
     author: `Openess Team`,
   },
