@@ -70,37 +70,48 @@ const IndexPage = () => {
           <div className="col">
             <div className=" row" style={{ position: `sticky`, top: `50px` }}>
               <div className="col-xl-12 col">
-                <div
-                  className=" platform--image m-md-2"
-                  data-tip="Download all"
-                >
+                <a href="https://www.dropbox.com/sh/cmxl0agdg08o4cn/AABtT-dwyt0jj0d7xdq7Qhgsa?dl=0 ">
                   <ReactTooltip />
-                  <FontAwesomeIcon icon={"download"} />
-                </div>
+
+                  <div
+                    className=" platform--image m-md-2"
+                    data-tip="Download all"
+                  >
+                    <FontAwesomeIcon icon={"download"} />
+                  </div>
+                </a>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image m-md-2" data-tip="Github">
+                <a href=" /">
                   <ReactTooltip />
-                  <FontAwesomeIcon icon={["fab", "github"]} />
-                </div>
+                  <div className=" platform--image m-md-2" data-tip="Github">
+                    <FontAwesomeIcon icon={["fab", "github"]} />
+                  </div>
+                </a>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image m-md-2" data-tip="Discord">
+                <a href="https://www.dropbox.com/sh/cmxl0agdg08o4cn/AADUK_nMqIlk64Knd6FFFdnua/discord-emojis?dl=0&subfolder_nav_tracking=1 ">
                   <ReactTooltip />
-                  <FontAwesomeIcon icon={["fab", "discord"]} />
-                </div>
+                  <div className=" platform--image m-md-2" data-tip="Discord">
+                    <FontAwesomeIcon icon={["fab", "discord"]} />
+                  </div>
+                </a>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image m-md-2" data-tip="Slack">
+                <a href=" https://www.dropbox.com/sh/cmxl0agdg08o4cn/AAB8CvdBvWBLXezDvAr9Pig2a/slack-emojis?dl=0&subfolder_nav_tracking=1">
                   <ReactTooltip />
-                  <FontAwesomeIcon icon={["fab", "slack"]} />
-                </div>
+                  <div className=" platform--image m-md-2" data-tip="Slack">
+                    <FontAwesomeIcon icon={["fab", "slack"]} />
+                  </div>
+                </a>
               </div>
               <div className="col-xl-12 col">
-                <div className=" platform--image m-md-2" data-tip="Mail">
+                <a href="https://www.dropbox.com/sh/cmxl0agdg08o4cn/AACaafCIjeKSqbxl7oa-gx_da/email-emojis?dl=0&subfolder_nav_tracking=1 ">
                   <ReactTooltip />
-                  <FontAwesomeIcon icon={"envelope"} />
-                </div>
+                  <div className=" platform--image m-md-2" data-tip="Mail">
+                    <FontAwesomeIcon icon={"envelope"} />
+                  </div>
+                </a>
               </div>
               {/* <div className="col-xl-12 col">
                 <div className=" platform--image m-md-2" data-tip="Whatsapp">
