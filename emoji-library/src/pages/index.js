@@ -50,10 +50,11 @@ const IndexPage = () => {
       <SEO title="Home" />
 
       <div
-        className="container emoji-collage"
+        className="container emoji-collage mb-4"
         style={{
           maxWidth: 1100,
-          marginTop: `50px`,
+          // paddingLeft: `15px`,
+          // marginTop: `-15px`,
         }}
       >
         <img
@@ -65,7 +66,7 @@ const IndexPage = () => {
           }}
         />
       </div>
-      <div className="container mt-4">
+      <div className="container mt-5">
         <div className="row g-4">
           <div className="col">
             <div className=" row" style={{ position: `sticky`, top: `50px` }}>
@@ -82,7 +83,7 @@ const IndexPage = () => {
                 </a>
               </div>
               <div className="col-xl-12 col">
-                <a href=" /">
+                <a href="https://github.com/openessdev/emoji">
                   <ReactTooltip />
                   <div className=" platform--image m-md-2" data-tip="Github">
                     <FontAwesomeIcon icon={["fab", "github"]} />
@@ -150,9 +151,9 @@ const IndexPage = () => {
 
                     <p>
                       These emoji packs are 100% free & open-source. Download
-                      these emoji packs by clicking on the icons to the left or
-                      below. {""}
-                      <span style={{ color: `purple` }}>
+                      these emoji packs by clicking on the white icons or below.{" "}
+                      {""}
+                      <span style={{ color: `#BB96D8` }}>
                         Available on WhatsApp, iMessage & Telegram by searching
                         "Openess" in the Top Stickers app.
                       </span>
@@ -164,12 +165,25 @@ const IndexPage = () => {
                 <EmojiCard key={item.id} item={item} />
               ))}
               <div className="my-4 credits">
-                <p>Illustrations & graphic design: Sarah Kim</p>
-                <p>Website development & data structures: Muhammad Bashir</p>
-                <p>Creative direction & production: Julia Che</p>
                 <p>
-                  A big thank you to David Di Biase & all our friends who
-                  provided feedback & support in the making of this project!
+                  Illustrations & graphic design:{" "}
+                  <a href=" https://dribbble.com/skim">Sarah Kim</a>{" "}
+                </p>
+                <p>
+                  Website development & data structures:{" "}
+                  <a href="https://twitter.com/adebayomuhamma2">
+                    Muhammad Bashir
+                  </a>{" "}
+                </p>
+                <p>
+                  Creative direction & production:{" "}
+                  <a href="https://twitter.com/lotusleafstyle">Julia Che</a>{" "}
+                </p>
+                <p>
+                  A big thank you to{" "}
+                  <a href="https://twitter.com/davedbase">David Di Biase</a> &
+                  all our friends who provided feedback & support in the making
+                  of this project!
                 </p>
               </div>
               <div className="d-flex bottom-logo justify-content-end">

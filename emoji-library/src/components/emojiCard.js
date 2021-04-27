@@ -19,7 +19,7 @@ const EmojiCard = ({ item }) => {
               backgroundColor: `${generateLightColorHex()}`,
             }}
           >
-            <div className=" tile" data-tip="Download emoji">
+            <div className=" tile" data-tip="gimme">
               <ReactTooltip />
               <a href={image.images.fallback.src} download>
                 <GatsbyImage image={image} alt={item.code} />
@@ -27,8 +27,14 @@ const EmojiCard = ({ item }) => {
             </div>
           </div>
           <div className="emoji--description--wrapper px-2">
+            <ReactTooltip />
             <Clipboard data-clipboard-text={item.code}>
-              <h6 className=" text-center emoji-code pt-2">{item.code}</h6>
+              <h6
+                className=" text-center emoji-code pt-2"
+                data-tip="copy to clipboard"
+              >
+                {item.code}
+              </h6>
             </Clipboard>
             <h6 className=" text-center emoji--description">
               {item.description}

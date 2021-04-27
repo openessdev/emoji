@@ -10,10 +10,13 @@ const Header = ({ siteTitle }) => (
     className="header container"
     style={{
       margin: `0 auto`,
-      maxWidth: 1100,
+      maxWidth: `1100px`,
       height: `70px`,
       display: `flex`,
+      justifyContent: `space-between`,
       alignItems: `center`,
+      paddingLeft: `27px`,
+      paddingRight: `50px`,
     }}
   >
     <Link
@@ -21,7 +24,6 @@ const Header = ({ siteTitle }) => (
       style={{
         color: `#ffffff`,
         textDecoration: `none`,
-        // fontSize: `90px`,
       }}
     >
       {/*{siteTitle}*/}
@@ -34,6 +36,11 @@ const Header = ({ siteTitle }) => (
         }}
       />
     </Link>
+    <a href="">
+      <div className=" platform--image">
+        <FontAwesomeIcon icon={["fab", "twitter"]} />
+      </div>
+    </a>
   </header>
 )
 
