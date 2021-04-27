@@ -1,0 +1,355 @@
+[
+  {
+    "id": 1,
+    "emoji": "",
+    "description": "binary data 101010 in navy",
+    "name": "binary code",
+    "code": ":binary:",
+    "tags": "binary",
+    "openess_author": "Sarah ,Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/binarydata-navy.png"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "emoji": "",
+    "description": "binary data 101010 in blue",
+    "name": "binary code",
+    "code": ":binary:",
+    "tags": "binary",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/binarydata-blue.png"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "emoji": "",
+    "description": "binary data 101010 in green",
+    "name": "binary code",
+    "code": ":binary:",
+    "tags": "binary",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/binarydata-green.png"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "emoji": "",
+    "description": "ladybug in purple",
+    "name": "bug-purple",
+    "code": ":bug:",
+    "tags": "bug",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/ladybug-purple.png"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "emoji": "",
+    "description": "ladybug in yellow",
+    "name": "bug-yellow",
+    "code": ":bug:",
+    "tags": "bug",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/ladybug-yellow.png"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "emoji": "",
+    "description": "fly bug in green",
+    "name": "bug-green",
+    "code": ":bug:",
+    "tags": "bug",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/fly-green.png"
+      }
+    }
+  },
+  {
+    "id": 7,
+    "emoji": "",
+    "description": "fly bug in pink",
+    "name": "bug-pink",
+    "code": ":bug:",
+    "tags": "bug",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/fly-pink.png"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "emoji": "",
+    "description": "caterpillar bug in blue and orange",
+    "name": "bug-blue",
+    "code": ":bug:",
+    "tags": "bug",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/caterpillar-blue.png"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "emoji": "",
+    "description": "caterpillar bug in rainbow",
+    "name": "bug-rainbow",
+    "code": ":bug:",
+    "tags": "bug",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/caterpillar-rainbow.png"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "emoji": "",
+    "description": "busy coder on laptop with yellow hair",
+    "name": "busycoder-yellow",
+    "code": ":busycoder:",
+    "tags": "busy",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/busycoder-yellow.png"
+      }
+    }
+  },
+  {
+    "id": 11,
+    "emoji": "",
+    "description": "busy coder on laptop with pink hair",
+    "name": "busycoder-pink",
+    "code": ":busycoder:",
+    "tags": "busy",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/busycoder-pink.png"
+      }
+    }
+  },
+  {
+    "id": 12,
+    "emoji": "",
+    "description": "busy coder on laptop with blue hair",
+    "name": "busycoder-blue",
+    "code": ":busycoder:",
+    "tags": "busy",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/busycoder-blue.png"
+      }
+    }
+  },
+  {
+    "id": 13,
+    "emoji": "",
+    "description": "busy coder on laptop with orange hair",
+    "name": "busycoder-orange",
+    "code": ":busycoder:",
+    "tags": "busy",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/busycoder-orange.png"
+      }
+    }
+  },
+  {
+    "id": 14,
+    "emoji": "",
+    "description": "busy coder on laptop with purple hair",
+    "name": "busycoder-purple",
+    "code": ":busycoder:",
+    "tags": "busy",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/busycoder-purple.png"
+      }
+    }
+  },
+  {
+    "id": 15,
+    "emoji": "",
+    "description": "busy coder on laptop with green hair",
+    "name": "busycoder-green",
+    "code": ":busycoder:",
+    "tags": "busy",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/busycoder-green.png"
+      }
+    }
+  },
+  {
+    "id": 16,
+    "emoji": "",
+    "description": "database on fire with orange flames",
+    "name": "database-orange",
+    "code": ":databaseonfire:",
+    "tags": "database",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/database-orange.png"
+      }
+    }
+  },
+  {
+    "id": 17,
+    "emoji": "",
+    "description": "database on fire with green flames",
+    "name": "database-green",
+    "code": ":databaseonfire:",
+    "tags": "database",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/database-green.png"
+      }
+    }
+  },
+  {
+    "id": 18,
+    "emoji": "",
+    "description": "database on fire with pink flames",
+    "name": "database-pink",
+    "code": ":databaseonfire:",
+    "tags": "database",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/database-pink.png"
+      }
+    }
+  },
+  {
+    "id": 19,
+    "emoji": "",
+    "description": "offline plug in black with pink X",
+    "name": "offline-pink",
+    "code": ":offline:",
+    "tags": "offline",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/offline-pink.png"
+      }
+    }
+  },
+  {
+    "id": 20,
+    "emoji": "",
+    "description": "offline plug in purple with pink X",
+    "name": "offline-purple",
+    "code": ":offline:",
+    "tags": "offline",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/offline-purple2.png"
+      }
+    }
+  },
+  {
+    "id": 21,
+    "emoji": "",
+    "description": "online plug in black with green check mark",
+    "name": "online-green",
+    "code": ":online:",
+    "tags": "online",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/online-green.png"
+      }
+    }
+  },
+  {
+    "id": 22,
+    "emoji": "",
+    "description": "online plug in purple with green check mark",
+    "name": "online-purple",
+    "code": ":online:",
+    "tags": "online",
+    "openess_author": "Sarah Kim",
+    "base_color": "",
+    "unicode": "",
+    "openess_images": {
+      "color": {
+        "png": "../images/png/online-purple1.png"
+      }
+    }
+  }
+]
+
