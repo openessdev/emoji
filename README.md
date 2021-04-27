@@ -1,7 +1,7 @@
 # Openess Emoji
----
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
+Visit [https://emoji.openess.dev](https://emoji.openess.dev) to view the site!
 
 ## 🚀 Quick start
 
