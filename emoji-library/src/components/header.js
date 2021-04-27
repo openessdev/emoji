@@ -37,7 +37,12 @@ const Header = ({ siteTitle }) => (
       />
     </Link>
     <a href="">
-      <div className=" platform--image">
+      <div
+        className=" platform--image"
+        style={{
+          maxWidth: `100%`,
+        }}
+      >
         <FontAwesomeIcon icon={["fab", "twitter"]} />
       </div>
     </a>
