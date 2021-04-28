@@ -47,6 +47,9 @@
          <meta name="twitter:description" content={seo.description} />
        )}
        {seo.image && <meta name="twitter:image" content={seo.image} />}
+       <meta property="og:image:alt" content="Openess Emoji" />
+       <meta property="og:image:width" content="1256" />
+       <meta property="og:image:width" content="2400" />
      </Helmet>
    )
  }

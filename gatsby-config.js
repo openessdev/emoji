@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Openess`,
-    description: `Openess emojis for everyone!.`,
+    title: `Open-source emoji set!`,
+    description: `Openess emojis for everyone! In recognition the tireless work of OSS contributors, builders & makers.`,
     author: `Openess Team`,
-    image: 'https://emoji.openess.dev/og-image/share.jpeg',
+    image: '/og-image/share.jpeg',
     url: 'https://emoji.openess.dev',
     twitterUsername: `openessdev`
   },

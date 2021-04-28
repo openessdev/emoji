@@ -66,21 +66,8 @@ const IndexPage = () => {
         <meta name="msapplication-TileColor" content="#2c4f7c" />
         <meta name="theme-color" content="#2c4f7c" />
         <meta name="msapplication-TileColor" content="#2c4f7c" />
-        <meta property="og:url" content={domain} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Open-source emoji!" />
-        <meta property="og:image" content={domain + "/og-image/share.jpeg"} />
-        <meta property="og:image:alt" content="Openess Emoji" />
-        <meta property="og:image:width" content="1256" />
-        <meta property="og:image:width" content="2400" />
-        <meta
-          name="description"
-          content="Check out this open-source emoji pack by @openess! ✨"
-        />
       </Helmet>
-      <SEO
-        
-        title="Open-source emoji!" />
+      <SEO title="Open-source emoji!" />
       <div
         className="container emoji-collage mb-4"
         style={{
