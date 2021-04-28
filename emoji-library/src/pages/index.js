@@ -7,7 +7,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import EmojiCard from "../components/emojiCard"
 import Logo from "../images/background/openess-logo.svg"
 import Cover from "../images/background/BgCover.png"
-import Omg from "../images/background/BgCover.png"
+import Omg from "../images/background/TwitterCover.png"
 import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 const IndexPage = props => {
@@ -42,7 +42,7 @@ const IndexPage = props => {
   return (
     <Layout>
       <SEO
-        title="Openess"
+        title="Openess Emoji for Devs"
         image={Omg}
         // url={props.data.site.siteMetadata.siteUrl}
       />

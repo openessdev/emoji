@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Openess`,
-    url: "https://openess-test.netlify.app",
+    url: "https://emoji.openess.dev",
     description: `A collection of beautifully crafted emoji.`,
-    image: "/images/BgCover.png",
+    image: "/images/TwitterCover.png",
     author: `Muhammad B. Adebayo`,
     twitterUsername: "@openessdev",
   },
