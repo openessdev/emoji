@@ -3,14 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "../components/font-awesome"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ReactTooltip from "react-tooltip"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import EmojiCard from "../components/emojiCard"
 import Logo from "../images/background/openess-logo.svg"
 import Cover from "../images/background/BgCover.png"
-import Helmet from "react-helmet"
+import Omg from "../images/background/BgCover.png"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
-const IndexPage = () => {
+const IndexPage = props => {
   const data = useStaticQuery(graphql`
     query {
       allEmojiDataJson {
@@ -38,23 +38,19 @@ const IndexPage = () => {
     }
   `)
 
-  const domain = "https://openess-test.netlify.app"
+  // const domain = "https://openess-test.netlify.app"
   return (
     <Layout>
-      <Helmet>
-        <meta property="og:image" content={domain + "/og-image/index.png"} />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:width" content="50" />
-      </Helmet>
-
-      <SEO title="Home" />
+      <SEO
+        title="Openess"
+        image={Omg}
+        // url={props.data.site.siteMetadata.siteUrl}
+      />
 
       <div
         className="container emoji-collage mb-4"
         style={{
           maxWidth: 1100,
-          // paddingLeft: `15px`,
-          // marginTop: `-15px`,
         }}
       >
         <img
@@ -71,61 +67,45 @@ const IndexPage = () => {
           <div className="col">
             <div className=" row" style={{ position: `sticky`, top: `50px` }}>
               <div className="col-xl-12 col">
-                <a href="https://www.dropbox.com/sh/cmxl0agdg08o4cn/AABtT-dwyt0jj0d7xdq7Qhgsa?dl=0 ">
-                  <ReactTooltip />
-
-                  <div
-                    className=" platform--image m-md-2"
-                    data-tip="Download all"
-                  >
+                <OutboundLink href="https://www.dropbox.com/sh/cmxl0agdg08o4cn/AABtT-dwyt0jj0d7xdq7Qhgsa?dl=0 ">
+                  <div className=" platform--image m-md-2 tooltips">
+                    <span className="tooltiptext">Download all</span>
                     <FontAwesomeIcon icon={"download"} />
                   </div>
-                </a>
+                </OutboundLink>
               </div>
               <div className="col-xl-12 col">
-                <a href="https://github.com/openessdev/emoji">
-                  <ReactTooltip />
-                  <div className=" platform--image m-md-2" data-tip="Github">
+                <OutboundLink href="https://github.com/openessdev/emoji">
+                  <div className=" platform--image m-md-2 tooltips">
+                    <span className="tooltiptext">Github</span>
                     <FontAwesomeIcon icon={["fab", "github"]} />
                   </div>
-                </a>
+                </OutboundLink>
               </div>
               <div className="col-xl-12 col">
-                <a href="https://www.dropbox.com/sh/cmxl0agdg08o4cn/AADUK_nMqIlk64Knd6FFFdnua/discord-emojis?dl=0&subfolder_nav_tracking=1 ">
-                  <ReactTooltip />
-                  <div className=" platform--image m-md-2" data-tip="Discord">
+                <OutboundLink href="https://www.dropbox.com/sh/cmxl0agdg08o4cn/AADUK_nMqIlk64Knd6FFFdnua/discord-emojis?dl=0&subfolder_nav_tracking=1 ">
+                  <div className=" platform--image m-md-2 tooltips">
+                    <span className="tooltiptext">Discord</span>
                     <FontAwesomeIcon icon={["fab", "discord"]} />
                   </div>
-                </a>
+                </OutboundLink>
               </div>
               <div className="col-xl-12 col">
-                <a href=" https://www.dropbox.com/sh/cmxl0agdg08o4cn/AAB8CvdBvWBLXezDvAr9Pig2a/slack-emojis?dl=0&subfolder_nav_tracking=1">
-                  <ReactTooltip />
-                  <div className=" platform--image m-md-2" data-tip="Slack">
+                <OutboundLink href=" https://www.dropbox.com/sh/cmxl0agdg08o4cn/AAB8CvdBvWBLXezDvAr9Pig2a/slack-emojis?dl=0&subfolder_nav_tracking=1">
+                  <div className=" platform--image m-md-2 tooltips">
+                    <span className="tooltiptext">Slack</span>
                     <FontAwesomeIcon icon={["fab", "slack"]} />
                   </div>
-                </a>
+                </OutboundLink>
               </div>
               <div className="col-xl-12 col">
-                <a href="https://www.dropbox.com/sh/cmxl0agdg08o4cn/AACaafCIjeKSqbxl7oa-gx_da/email-emojis?dl=0&subfolder_nav_tracking=1 ">
-                  <ReactTooltip />
-                  <div className=" platform--image m-md-2" data-tip="Mail">
+                <OutboundLink href="https://www.dropbox.com/sh/cmxl0agdg08o4cn/AACaafCIjeKSqbxl7oa-gx_da/email-emojis?dl=0&subfolder_nav_tracking=1 ">
+                  <div className=" platform--image m-md-2 tooltips">
+                    <span className="tooltiptext">Mail</span>
                     <FontAwesomeIcon icon={"envelope"} />
                   </div>
-                </a>
+                </OutboundLink>
               </div>
-              {/* <div className="col-xl-12 col">
-                <div className=" platform--image m-md-2" data-tip="Whatsapp">
-                  <ReactTooltip />
-                  <FontAwesomeIcon icon={["fab", "whatsapp"]} />
-                </div>
-              </div>
-              <div className="col-xl-12 col">
-                <div className=" platform--image m-md-2" data-tip="Telegram">
-                  <ReactTooltip />
-                  <FontAwesomeIcon icon={"paper-plane"} />
-                </div>
-              </div>*/}
             </div>
           </div>
           <div className="col-sm-11">
