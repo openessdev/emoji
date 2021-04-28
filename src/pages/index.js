@@ -66,9 +66,6 @@ const IndexPage = () => {
         <meta name="msapplication-TileColor" content="#2c4f7c" />
         <meta name="theme-color" content="#2c4f7c" />
         <meta name="msapplication-TileColor" content="#2c4f7c" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@site" />
-        <meta name="twitter:creator" content="@openessdev" />
         <meta property="og:url" content={domain} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Open-source emoji!" />
@@ -77,15 +74,13 @@ const IndexPage = () => {
         <meta property="og:image:width" content="1256" />
         <meta property="og:image:width" content="2400" />
         <meta
-          property="og:description"
-          content="Check out this open-source emoji pack by @openess! ✨"
-        />
-        <meta
           name="description"
           content="Check out this open-source emoji pack by @openess! ✨"
         />
       </Helmet>
-      <SEO title="Open-source emoji!" />
+      <SEO
+        
+        title="Open-source emoji!" />
       <div
         className="container emoji-collage mb-4"
         style={{
@@ -190,21 +185,21 @@ const IndexPage = () => {
               <div className="my-4 credits">
                 <p>
                   Illustrations & graphic design:{" "}
-                  <a target="_blank" href="https://dribbble.com/skim">Sarah Kim</a>{" "}
+                  <a target="_blank" rel="noreferrer" href="https://dribbble.com/skim">Sarah Kim</a>{" "}
                 </p>
                 <p>
                   Website development & data structures:{" "}
-                  <a target="_blank" href="https://twitter.com/adebayomuhamma2">
+                  <a target="_blank" rel="noreferrer" href="https://twitter.com/adebayomuhamma2">
                     Muhammad Bashir
                   </a>{" "}
                 </p>
                 <p>
                   Creative direction & production:{" "}
-                  <a target="_blank" href="https://twitter.com/lotusleafstyle">Julia Che</a>{" "}
+                  <a target="_blank" rel="noreferrer" href="https://twitter.com/lotusleafstyle">Julia Che</a>{" "}
                 </p>
                 <p>
                   A big thank you to{" "}
-                  <a target="_blank" href="https://twitter.com/davedbase">David Di Biase</a> &
+                  <a target="_blank" rel="noreferrer" href="https://twitter.com/davedbase">David Di Biase</a> &
                   all our friends who provided feedback & support in the making
                   of this project!
                 </p>

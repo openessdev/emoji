@@ -34,18 +34,16 @@ a {
     line-height: 1.8;
 }
 
-.credits {
-    padding-top: 35px;
-}
 .credits p {
-    margin-bottom: 0px;
-    font-size: 15px;
+    margin-bottom: 0;
+    font-size: 16px;
+
 }
 
 .page-detail-wrapper .page-detail--title {
     font-weight: bold;
+    font-size: 2rem;
     margin-bottom: 20px;
-    font-size: 30px;
 }
 
 .emoji-list-wrapper {
@@ -92,7 +90,7 @@ a {
 }
 
 .emoji-tile-wrapper .emoji-tile .emoji--description--wrapper .emoji-code {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -111,6 +109,12 @@ a {
             -8px -8px 12px 0 rgba(255, 255, 235, 0.3);*/
     align-items: center;
     justify-content: center;
+}
+.emoji-tile-wrapper .emoji {
+    transition: all 250ms;
+}
+.emoji-tile-wrapper:hover .emoji {
+    transform: scale(1.3);
 }
 
 .page-detail-wrapper .emoji--pack--links .link--holder a p {
@@ -143,3 +147,44 @@ a {
     color: #D7CEDE;
 }
 
+/* Tooltip */
+.tooltips {
+    position: relative;
+    display: inline-block;
+}
+.tooltips .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    font-size: 10px;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltips .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltips:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+/*
+
+*/

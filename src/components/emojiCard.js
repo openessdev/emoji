@@ -1,13 +1,11 @@
-import React, { useRef } from "react"
+import React from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Clipboard from "react-clipboard.js"
-import ReactTooltip from "react-tooltip"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import generateLightColorHex from "../helpers/util"
 
 const EmojiCard = ({ item }) => {
-  // const color = useRef(generateLightColorHex())
-
   const image = getImage(item.openess_images.color.png)
   return (
     <>
@@ -19,22 +17,17 @@ const EmojiCard = ({ item }) => {
               backgroundColor: `${generateLightColorHex()}`,
             }}
           >
-            <div className=" tile" data-tip="gimme">
-              <ReactTooltip />
-              <a href={image.images.fallback.src} download>
-                <GatsbyImage image={image} alt={item.code} />
-              </a>
+            <div className=" tile tooltips">
+              <span className="tooltiptext">gimme</span>
+              <OutboundLink href={image.images.fallback.src} download>
+                <GatsbyImage className="emoji" image={image} alt={item.code} />
+              </OutboundLink>
             </div>
           </div>
-          <div className="emoji--description--wrapper px-2">
-            <ReactTooltip />
-            <Clipboard data-clipboard-text={item.code}>
-              <h6
-                className=" text-center emoji-code pt-2"
-                data-tip="copy to clipboard"
-              >
-                {item.code}
-              </h6>
+          <div className="emoji--description--wrapper px-2 ">
+            <Clipboard className="tooltips" data-clipboard-text={item.code}>
+              <span className="tooltiptext">copy to clipboard</span>
+              <h6 className=" text-center emoji-code pt-2">{item.code}</h6>
             </Clipboard>
             <h6 className=" text-center emoji--description">
               {item.description}
